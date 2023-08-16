@@ -5,6 +5,13 @@ import { Input } from '@nextui-org/input';
 import { Button } from '@nextui-org/button';
 import { ThemeSwitcher } from './components/ThemeSwitcher';
 import { Accordion, AccordionItem } from '@nextui-org/accordion';
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownTrigger,
+} from '@nextui-org/dropdown';
+import { CustomModal } from './components/CustomModal';
 
 export default function Home() {
   const defaultContent =
@@ -42,6 +49,20 @@ export default function Home() {
           {defaultContent}
         </AccordionItem>
       </Accordion>
+      <Dropdown>
+        <DropdownTrigger>
+          <Button variant="bordered">Open Menu</Button>
+        </DropdownTrigger>
+        <DropdownMenu aria-label="Static Actions">
+          <DropdownItem key="new">New file</DropdownItem>
+          <DropdownItem key="copy">Copy link</DropdownItem>
+          <DropdownItem key="edit">Edit file</DropdownItem>
+          <DropdownItem key="delete" className="text-danger" color="danger">
+            Delete file
+          </DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+      <CustomModal />
     </main>
   );
 }

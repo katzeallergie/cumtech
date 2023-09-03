@@ -25,10 +25,12 @@ export default function Work() {
   );
   return (
     <>
-      <Header />
       <main>
         <div className="w-screen h-screen flex justify-center items-center text-5xl">
             Work
+        </div>
+        <div>
+            Under Construction
         </div>
       </main>
     </>

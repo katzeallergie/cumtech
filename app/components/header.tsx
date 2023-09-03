@@ -13,7 +13,7 @@ export const Header = () => {
           <Link href="/work">Work</Link>
         </div>
         <div className="text-xl flex items-center">
-          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </div>
       </div>
     </header>

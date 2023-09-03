@@ -28,14 +28,7 @@ export default function Work() {
       <Header />
       <main>
         <div className="w-screen h-screen flex justify-center items-center text-5xl">
-          <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            options={particlesConfig}
-            height="100vh"
-            width="100vw"
-          />
+            Work
         </div>
       </main>
     </>

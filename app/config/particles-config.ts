@@ -11,7 +11,6 @@ const particlesConfig = {
     opacity: 1,
   },
   backgroundMask: {
-    composite: 'destination-out',
     cover: {
       color: {
         value: '#fff',
@@ -30,17 +29,10 @@ const particlesConfig = {
   duration: 0,
   fpsLimit: 120,
   interactivity: {
-    detectsOn: 'window',
     events: {
       onClick: {
         enable: false,
         mode: [],
-      },
-      onDiv: {
-        selectors: [],
-        enable: false,
-        mode: [],
-        type: 'circle',
       },
       onHover: {
         enable: true,
@@ -314,7 +306,6 @@ const particlesConfig = {
       },
       enable: false,
       maxSpeed: 50,
-      mode: 'bounce',
       overlap: {
         enable: true,
         retries: 0,
@@ -369,12 +360,10 @@ const particlesConfig = {
       center: {
         x: 50,
         y: 50,
-        mode: 'percent',
         radius: 0,
       },
       decay: 0,
       distance: {},
-      direction: 'none',
       drift: 0,
       enable: true,
       gravity: {
@@ -394,13 +383,6 @@ const particlesConfig = {
         },
         enable: false,
         options: {},
-      },
-      outModes: {
-        default: 'out',
-        bottom: 'out',
-        left: 'out',
-        right: 'out',
-        top: 'out',
       },
       random: false,
       size: false,
@@ -443,9 +425,6 @@ const particlesConfig = {
         decay: 0,
         delay: 0,
         sync: false,
-        mode: 'auto',
-        startValue: 'random',
-        destroy: 'none',
         minimumValue: 0.3,
       },
     },
@@ -483,9 +462,6 @@ const particlesConfig = {
         decay: 0,
         delay: 0,
         sync: false,
-        mode: 'auto',
-        startValue: 'random',
-        destroy: 'none',
         minimumValue: 1,
       },
     },

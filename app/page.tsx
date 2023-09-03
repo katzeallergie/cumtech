@@ -1,6 +1,8 @@
 import Contact from './components/contact';
 import { Header } from './components/header';
 import ParticlesBackground from './components/ParticlesBackground';
+import Work from './components/work';
+
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
             Change the World by Technology
           </h2>
         </div>
-        <div id="work" className='h-screen'></div>
+        <Work />
         <Contact/>
       </main>
     </>

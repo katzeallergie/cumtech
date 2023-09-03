@@ -1,3 +1,4 @@
+import Contact from './components/contact';
 import { Header } from './components/header';
 import ParticlesBackground from './components/ParticlesBackground';
 
@@ -11,6 +12,7 @@ export default function Home() {
             Change the World by Technology
           </h2>
         </div>
+        <Contact/>
       </main>
     </>
   );

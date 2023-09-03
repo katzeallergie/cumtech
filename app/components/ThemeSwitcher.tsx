@@ -14,9 +14,9 @@ export const ThemeSwitcher = () => {
         defaultSelected
         size="lg"
         color="primary"
-        startContent={<MoonIcon />}
-        endContent={<SunIcon />}
-        onValueChange={(isSelected) => setTheme(isSelected ? 'dark' : 'light')}
+        startContent={<SunIcon />}
+        endContent={<MoonIcon />}
+        onValueChange={(isSelected) => setTheme(isSelected ? 'light' : 'dark')}
       />
     </div>
   );

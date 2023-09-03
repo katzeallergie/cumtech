@@ -12,6 +12,7 @@ export default function Home() {
             Change the World by Technology
           </h2>
         </div>
+        <div id="work" className='h-screen'></div>
         <Contact/>
       </main>
     </>

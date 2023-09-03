@@ -16,8 +16,7 @@ export default function Work() {
       x: 0,
       y: 0,
       transition: {
-        ease: 'linear',
-        type: 'spring',
+        type: "spring",
         bounce: 0.4,
         duration: 1.5,
       },

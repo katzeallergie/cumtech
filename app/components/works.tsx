@@ -9,8 +9,8 @@ export default function Works() {
   const zitImgVariants: Variants = {
     offScreen: {
       opacity: 0,
-      x: -100,
-      y: -100,
+      x: -60,
+      y: -60,
     },
     onScreen: {
       opacity: 1,
@@ -34,7 +34,7 @@ export default function Works() {
           initial="offScreen"
           whileInView="onScreen"
           variants={zitImgVariants}
-          viewport={{ once: true, amount: 'some' }}
+          viewport={{ once: true, amount: 0.8 }}
           href="https://zit.co.jp"
           target="_blank"
           rel="noopener noreferrer"
@@ -45,17 +45,21 @@ export default function Works() {
           <Image src={zitImg} alt="zitImg1" className="md:w-3/4 w-3/5"></Image>
         </motion.a>
         <motion.div
-          className="flex justify-center items-center hover:md:bg-gray-300 hover:md:text-white md:py-10 py-4 md:px-5 px-2 md:opacity-80 md:rounded md:cursor-pointer md:w-1/2 md:m-auto"
+          className="flex justify-center items-center hover:md:bg-gray-300 hover:md:text-white md:py-10 py-4 md:px-5 px-2 md:rounded md:cursor-pointer md:w-1/2 md:m-auto"
           initial="offScreen"
           whileInView="onScreen"
           variants={zitImgVariants}
-          viewport={{ once: true, amount: 'some' }}
+          viewport={{ once: true, amount: 0.8 }}
         >
           <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
             LINEBot制作
           </div>
           <div className="md:w-3/4 w-3/5 md:h-1/2">
-            <Image src={linebotImg} alt="linebotImg" className="md:w-48 m-auto w-20"></Image>
+            <Image
+              src={linebotImg}
+              alt="linebotImg"
+              className="md:w-48 m-auto w-20"
+            ></Image>
           </div>
         </motion.div>
       </div>

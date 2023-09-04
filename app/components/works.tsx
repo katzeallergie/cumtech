@@ -5,7 +5,6 @@ import { motion, Variants } from 'framer-motion';
 import zitImg from '../img/zit.png';
 import linebotImg from '../img/linebot.png';
 
-
 export default function Works() {
   const zitImgVariants: Variants = {
     offScreen: {
@@ -37,6 +36,8 @@ export default function Works() {
           variants={zitImgVariants}
           viewport={{ once: true, amount: 'some' }}
           href="https://zit.co.jp"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
             ZIT株式会社
@@ -53,7 +54,11 @@ export default function Works() {
           <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
             LINEBot制作
           </div>
-          <Image src={linebotImg} alt="linebotImg" className="md:w-3/4 w-3/5 md:h-1/2"></Image>
+          <Image
+            src={linebotImg}
+            alt="linebotImg"
+            className="md:w-3/4 w-3/5 md:h-1/2"
+          ></Image>
         </motion.div>
       </div>
     </div>

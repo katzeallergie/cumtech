@@ -1,8 +1,10 @@
-"use client";
-import { Divider } from "@nextui-org/divider";
-import Image from "next/image";
-import { motion, Variants } from "framer-motion";
-import zitImg from "../img/zit.png";
+'use client';
+import { Divider } from '@nextui-org/divider';
+import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
+import zitImg from '../img/zit.png';
+import linebotImg from '../img/linebot.png';
+
 
 export default function Works() {
   const zitImgVariants: Variants = {
@@ -16,7 +18,7 @@ export default function Works() {
       x: 0,
       y: 0,
       transition: {
-        type: "spring",
+        type: 'spring',
         bounce: 0.6,
         duration: 2.5,
       },
@@ -29,11 +31,11 @@ export default function Works() {
       <Divider className="mt-2 text-xl" />
       <div className="md:mt-12 mt-10">
         <motion.a
-          className="flex justify-center items-center hover:md:bg-gray-300 md:py-10 py-4 md:px-5 px-2 md:opacity-80 md:rounded md:cursor-pointer md:w-1/2 md:m-auto"
+          className="flex justify-center items-center hover:md:bg-gray-300 hover:md:text-white md:py-10 py-4 md:px-5 px-2 md:rounded md:cursor-pointer md:w-1/2 md:m-auto"
           initial="offScreen"
           whileInView="onScreen"
           variants={zitImgVariants}
-          viewport={{ once: true, amount: "some" }}
+          viewport={{ once: true, amount: 'some' }}
           href="https://zit.co.jp"
         >
           <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
@@ -41,6 +43,18 @@ export default function Works() {
           </div>
           <Image src={zitImg} alt="zitImg1" className="md:w-3/4 w-3/5"></Image>
         </motion.a>
+        <motion.div
+          className="flex justify-center items-center hover:md:bg-gray-300 hover:md:text-white md:py-10 py-4 md:px-5 px-2 md:opacity-80 md:rounded md:cursor-pointer md:w-1/2 md:m-auto"
+          initial="offScreen"
+          whileInView="onScreen"
+          variants={zitImgVariants}
+          viewport={{ once: true, amount: 'some' }}
+        >
+          <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
+            LINEBot制作
+          </div>
+          <Image src={linebotImg} alt="linebotImg" className="md:w-3/4 w-3/5 md:h-1/2"></Image>
+        </motion.div>
       </div>
     </div>
   );

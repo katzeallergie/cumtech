@@ -8,8 +8,8 @@ export default function Works() {
   const zitImgVariants: Variants = {
     offScreen: {
       opacity: 0,
-      x: -200,
-      y: -200,
+      x: -100,
+      y: -100,
     },
     onScreen: {
       opacity: 1,
@@ -18,7 +18,7 @@ export default function Works() {
       transition: {
         type: "spring",
         bounce: 0.6,
-        duration: 3.0,
+        duration: 2.5,
       },
     },
   };
@@ -33,7 +33,7 @@ export default function Works() {
           initial="offScreen"
           whileInView="onScreen"
           variants={zitImgVariants}
-          viewport={{ amount: "some" }}
+          viewport={{ once: true, amount: "some" }}
           href="https://zit.co.jp"
         >
           <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">

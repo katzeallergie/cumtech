@@ -54,11 +54,9 @@ export default function Works() {
           <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
             LINEBot制作
           </div>
-          <Image
-            src={linebotImg}
-            alt="linebotImg"
-            className="md:w-3/4 w-3/5 md:h-1/2"
-          ></Image>
+          <div className="md:w-3/4 w-3/5 md:h-1/2">
+            <Image src={linebotImg} alt="linebotImg" className="md:w-48 m-auto w-20"></Image>
+          </div>
         </motion.div>
       </div>
     </div>

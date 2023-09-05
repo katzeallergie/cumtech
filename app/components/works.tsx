@@ -30,7 +30,7 @@ export default function Works() {
       <Divider className="mt-2 text-xl" />
       <div className="md:mt-12 mt-10">
         <motion.a
-          className="flex justify-center items-center hover:md:bg-gray-300 hover:md:text-white md:py-10 py-4 md:px-5 px-2 md:rounded md:cursor-pointer md:w-1/2 md:m-auto"
+          className="flex justify-center items-center md:w-1/2 md:mx-auto"
           initial="offScreen"
           whileInView="onScreen"
           variants={zitImgVariants}
@@ -39,27 +39,35 @@ export default function Works() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
-            ZIT株式会社
+          <div className="w-full flex justify-center items-center md:border-b-8 md:border-transparent md:hover:border-red-400 md:rounded md:hover:bg-red-100 hover:opacity-60 md:py-10 py-4 md:px-5 px-2 md:cursor-pointer">
+            <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
+              ZIT株式会社
+            </div>
+            <Image
+              src={zitImg}
+              alt="zitImg1"
+              className="md:w-3/4 w-3/5"
+            ></Image>
           </div>
-          <Image src={zitImg} alt="zitImg1" className="md:w-3/4 w-3/5"></Image>
         </motion.a>
         <motion.div
-          className="flex justify-center items-center hover:md:bg-gray-300 hover:md:text-white md:py-10 py-4 md:px-5 px-2 md:rounded md:cursor-pointer md:w-1/2 md:m-auto"
+          className="flex justify-center items-center md:w-1/2 md:mx-auto md:mt-10"
           initial="offScreen"
           whileInView="onScreen"
           variants={zitImgVariants}
           viewport={{ once: true, amount: 0.8 }}
         >
-          <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
-            LINEBot制作
-          </div>
-          <div className="md:w-3/4 w-3/5 md:h-1/2">
-            <Image
-              src={linebotImg}
-              alt="linebotImg"
-              className="md:w-48 m-auto w-20"
-            ></Image>
+          <div className="w-full flex justify-center items-center md:border-b-8 md:border-transparent md:hover:border-blue-400 md:rounded md:hover:bg-blue-100 hover:opacity-60 md:py-10 py-4 md:px-5 px-2 md:cursor-pointer">
+            <div className="pt-2 px-2 text-lg font-semibold	md:w-1/4 w-2/5">
+              LINEBot制作
+            </div>
+            <div className="md:w-3/4 w-3/5 md:h-1/2">
+              <Image
+                src={linebotImg}
+                alt="linebotImg"
+                className="md:w-48 m-auto w-20"
+              ></Image>
+            </div>
           </div>
         </motion.div>
       </div>

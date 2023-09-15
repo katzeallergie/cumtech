@@ -2,8 +2,8 @@
 import { Divider } from "@nextui-org/divider";
 import zitImg from "../img/zit.png";
 import linebotImg from "../img/linebot.png";
-import SPWork from "./SPWork";
 import PCWork from "./PCWork";
+import SPWork from "./SPWork";
 
 export default function Works() {
   return (
@@ -19,7 +19,7 @@ export default function Works() {
         />
       </div>
       <div className="md:mt-10">
-        <SPWork title="LINEBot制作" src={linebotImg} alt="linebotImg"></SPWork>
+        <SPWork title="LINEBot制作" src={linebotImg} alt="linebotImg" />
       </div>
     </div>
   );

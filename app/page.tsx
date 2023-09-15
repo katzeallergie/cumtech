@@ -1,5 +1,5 @@
 import Contact from "./components/Contact";
-import Work from "./components/Works";
+import Works from "./components/Works";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
             Certify Your Manhood by Technology
           </h2>
         </div>
-        <Work />
+        <Works />
         <Contact />
       </main>
     </>

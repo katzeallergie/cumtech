@@ -1,8 +1,7 @@
-import Contact from './components/contact';
-import { Header } from './components/header';
-import ParticlesBackground from './components/ParticlesBackground';
-import Work from './components/works';
-
+import Contact from "./components/Contact";
+import { Header } from "./components/Header";
+import ParticlesBackground from "./components/ParticlesBackground";
+import Work from "./components/Works";
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
           </h2>
         </div>
         <Work />
-        <Contact/>
+        <Contact />
       </main>
     </>
   );

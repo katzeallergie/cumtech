@@ -1,10 +1,10 @@
-'use client';
-import { Header } from '../components/header';
-import Particles from 'react-tsparticles';
-import type { Container, Engine } from 'tsparticles-engine';
-import { useCallback } from 'react';
-import { loadFull } from 'tsparticles';
-import particlesConfig from '../config/particles-config';
+"use client";
+import { Header } from "./Header";
+import Particles from "react-tsparticles";
+import type { Container, Engine } from "tsparticles-engine";
+import { useCallback } from "react";
+import { loadFull } from "tsparticles";
+import particlesConfig from "../config/particles-config";
 
 export default function ParticlesBackground() {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -21,7 +21,7 @@ export default function ParticlesBackground() {
     async (container: Container | undefined) => {
       await console.log(container);
     },
-    [],
+    []
   );
   return (
     <Particles

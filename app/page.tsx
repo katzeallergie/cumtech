@@ -1,6 +1,4 @@
 import Contact from "./components/Contact";
-import { Header } from "./components/Header";
-import ParticlesBackground from "./components/ParticlesBackground";
 import Work from "./components/Works";
 
 export default function Home() {

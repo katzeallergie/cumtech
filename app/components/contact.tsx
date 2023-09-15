@@ -1,5 +1,5 @@
-'use client';
-import { Divider } from '@nextui-org/divider';
+"use client";
+import { Divider } from "@nextui-org/divider";
 
 export default function Contact() {
   return (

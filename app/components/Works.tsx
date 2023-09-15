@@ -1,7 +1,5 @@
 "use client";
 import { Divider } from "@nextui-org/divider";
-import Image from "next/image";
-import { motion, Variants } from "framer-motion";
 import zitImg from "../img/zit.png";
 import linebotImg from "../img/linebot.png";
 import SPWork from "./SPWork";

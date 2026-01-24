@@ -25,11 +25,11 @@ export default function RootLayout({
           id="agile-base-service-key"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.AGILE_BASE_SERVICE_KEY = "svc_22w4pi4bt7vqgjajcylguoxbbe";`,
+            __html: `window.AGILE_BASE_SERVICE_KEY = "svc_rbaculfyzzeids6evb7sle4t5y";`,
           }}
         />
         <Script
-          src="https://agilebasetag-tokyo.s3.ap-northeast-1.amazonaws.com/index.js"
+          src="https://agilebasetag-tokyo-prod.s3.ap-northeast-1.amazonaws.com/index.js"
           strategy="afterInteractive"
         />
         <ParticlesBackground />

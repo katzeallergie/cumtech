@@ -25,7 +25,7 @@ export default function RootLayout({
           id="agile-base-service-key"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `window.AGILE_BASE_SERVICE_KEY = "svc_rbaculfyzzeids6evb7sle4t5y";`,
+            __html: `window.AGILE_BASE_SERVICE_KEY = "svc_iwfj57eolcwwxdsabasi6qaf4e";`,
           }}
         />
         <Script

@@ -32,6 +32,10 @@ export default function RootLayout({
           src="https://agilebasetag-tokyo-prod.s3.ap-northeast-1.amazonaws.com/index.js"
           strategy="afterInteractive"
         />
+        <Script
+          src="https://itera.adorbia.com/xpath-picker-snippet.js"
+          strategy="afterInteractive"
+        />
         <ParticlesBackground />
         <Header />
         <Providers>{children}</Providers>

@@ -22,18 +22,9 @@ export default function RootLayout({
     <html lang="ja">
       <body className={inter.className}>
         <Script
-          id="agile-base-service-key"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `window.AGILE_BASE_SERVICE_KEY = "svc_iwfj57eolcwwxdsabasi6qaf4e";`,
-          }}
-        />
-        <Script
-          src="https://agilebasetag-tokyo-prod.s3.ap-northeast-1.amazonaws.com/index.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="https://itera.adorbia.com/xpath-picker-snippet.js"
+          src="https://agilebasetag-tokyo.s3.ap-northeast-1.amazonaws.com/index.js"
+          data-service-key="svc_22w4pi4bt7vqgjajcylguoxbbe"
+          data-enable-xpath-picker="true"
           strategy="afterInteractive"
         />
         <ParticlesBackground />
